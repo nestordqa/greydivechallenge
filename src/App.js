@@ -1,10 +1,19 @@
 import React from "react";
+import {Route, Routes} from 'react-router-dom';
 import './App.css';
-import { Slider } from "./components/Slider";
+import { Form } from "./components/Form";
+import { Docs } from "./components/Docs";
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 const App = ()=> {
   return (
     <div className="App">
-      <Slider/>
+        <Routes>
+          <Route exact path="/" element={<Form/>}/>
+          <Route exact path="/table" element={<Docs/>}/>
+        </Routes>
+      
+      
     </div>
   );
 }

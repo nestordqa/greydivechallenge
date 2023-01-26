@@ -8,4 +8,25 @@
   width: 100vw;
   height: 100vh;
 }
+select{
+  width: 100px;
+  margin-left: 40px;
+}
+div{
+  margin:20px;
+  column-gap: 20px;
+  row-gap: 10px;
+}
+.docsContainer{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.buttonHidden{
+  display:none
+}
+
 
